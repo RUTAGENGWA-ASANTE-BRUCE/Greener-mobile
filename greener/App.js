@@ -8,6 +8,7 @@ import LoginScreen from "./screens/LoginScreen"
 import BrowseScreen from "./screens/BrowseScreen"
 import ExploreScreen from "./screens/ExploreScreen"
 import DescribeScreen from "./screens/DescribeScreen"
+import SettingsScreen from "./screens/SettingsScreen"
 export default function App() {
   const Stack=createNativeStackNavigator()
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Stack.Screen component={BrowseScreen} name="BrowseScreen" options={{headerShown:false}} />
           <Stack.Screen component={ExploreScreen} name="ExploreScreen" options={{headerShown:false}}/>
           <Stack.Screen component={DescribeScreen} name="DescribeScreen" options={{headerShown:false}}/>
+          <Stack.Screen component={SettingsScreen} name="SettingsScreen" options={{headerShown:false}}/>
         </Stack.Navigator>
     </SafeAreaProvider>
       </NavigationContainer>

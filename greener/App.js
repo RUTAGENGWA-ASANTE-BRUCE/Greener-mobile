@@ -6,6 +6,8 @@ import {NavigationContainer} from "@react-navigation/native"
 import HomeScreen from "./screens/HomeScreen"
 import LoginScreen from "./screens/LoginScreen"
 import BrowseScreen from "./screens/BrowseScreen"
+import ExploreScreen from "./screens/ExploreScreen"
+import DescribeScreen from "./screens/DescribeScreen"
 export default function App() {
   const Stack=createNativeStackNavigator()
   return (
@@ -16,6 +18,8 @@ export default function App() {
           <Stack.Screen component={HomeScreen} name="HomeScreen" options={{headerShown:false}}/>
           <Stack.Screen component={LoginScreen} name="LoginScreen" options={{headerShown:false}} />
           <Stack.Screen component={BrowseScreen} name="BrowseScreen" options={{headerShown:false}} />
+          <Stack.Screen component={ExploreScreen} name="ExploreScreen" options={{headerShown:false}}/>
+          <Stack.Screen component={DescribeScreen} name="DescribeScreen" options={{headerShown:false}}/>
         </Stack.Navigator>
     </SafeAreaProvider>
       </NavigationContainer>

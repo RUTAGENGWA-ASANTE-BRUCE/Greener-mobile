@@ -16,6 +16,7 @@ import { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import plantsIcon from "../public/icons8-plant-58.png";
 import seedsIcon from "../public/icons8-seeds-64.png";
+// import * as Progress from 'react-native-progress';
 import flowersIcon from "../public/icons8-flowers-64.png";
 import sprayersIcon from "../public/icons8-sprayer-64.png";
 import potsIcon from "../public/icons8-plant-pot-64.png";
@@ -119,6 +120,9 @@ export default function SettingsScreen() {
             paul.jamesspn@gmail.com
           </Text>
           </View>
+          <Text style={tw`mt-5 text-base text-gray-400`}>Budget</Text>
+            
+            {/* <Progress.Bar progress={0.3} width={200} /> */}
         <View style={tw`mt-2 flex flex-row justify-between`}>
             <Text style={tw`text-gray-400 text-base`}>Notifications</Text>
             <LinearGradient
